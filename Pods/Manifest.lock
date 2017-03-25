@@ -1,0 +1,53 @@
+PODS:
+  - Alamofire (4.0.1)
+  - AlamofireImage (3.1.0):
+    - Alamofire (~> 4.0)
+  - FastImageCache (1.5.1)
+  - KDCircularProgress (1.5.2)
+  - MBProgressHUD (0.9.2)
+  - MHPrettyDate (1.1.1)
+  - MXParallaxHeader (0.6.0)
+  - SCLAlertView (0.7.0)
+  - Stripe (9.2.0)
+  - SwiftWebSocket (2.6.5)
+  - SwiftyJSON (2.3.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - AlamofireImage (~> 3.1)
+  - FastImageCache (~> 1.5)
+  - KDCircularProgress
+  - MBProgressHUD (~> 0.9.2)
+  - MHPrettyDate
+  - MXParallaxHeader
+  - SCLAlertView
+  - Stripe
+  - SwiftWebSocket
+  - SwiftyJSON (from `https://github.com/acegreen/SwiftyJSON.git`, branch `swift3`)
+
+EXTERNAL SOURCES:
+  SwiftyJSON:
+    :branch: swift3
+    :git: https://github.com/acegreen/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  SwiftyJSON:
+    :commit: 8971384559780e631b041ac91b16734a396d4c14
+    :git: https://github.com/acegreen/SwiftyJSON.git
+
+SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  AlamofireImage: bb8c8351c51cb1633bb6be69b6dbbaff37ce65b7
+  FastImageCache: 2e7a6f677b15336eb3d1a4092a494676256c891d
+  KDCircularProgress: 12f677b2deb02409ab48c6cae1898d146b8ad549
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MHPrettyDate: e0e5975041f0210c0542f4c5d7e3e44d1a8537be
+  MXParallaxHeader: 2997592b8349baf8557ae0e4346f6b17e141de39
+  SCLAlertView: 8a14ffc40590c619e183eed2298b854385f30be1
+  Stripe: a47770e82db059d0e7e160f9aabc2997055ee911
+  SwiftWebSocket: 1ef8a0efb023544643bdf480c1ec4a62b204f293
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+
+PODFILE CHECKSUM: 6d97ae30659e610f46972ef9c91309e3b27a4018
+
+COCOAPODS: 1.1.1

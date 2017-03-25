@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ProximaNovaSoft-Regular.ttf">
+            <string>ProximaNovaSoft-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="mePublicCell" id="kGD-vv-zVJ" userLabel="PublicGoalCollectionViewCell" customClass="PublicGoalCollectionViewCell" customModule="Mung" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="232"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="232"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sFb-pL-w8T" userLabel="goalImageView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="308"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="308" id="hYj-Sv-tkP"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2w-up-1Ar">
+                        <rect key="frame" x="8" y="134" width="359" height="0.0"/>
+                        <fontDescription key="fontDescription" name="ProximaNovaSoft-Regular" family="Proxima Nova Soft" pointSize="27"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3P-ez-Xqc" userLabel="goalAuthorImageButton">
+                        <rect key="frame" x="8" y="174" width="50" height="50"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="jlP-Cw-5nl"/>
+                            <constraint firstAttribute="height" constant="50" id="mw4-bo-nrV"/>
+                        </constraints>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cS3-yb-FKn" userLabel="goalAuthorButton">
+                        <rect key="frame" x="67" y="191.5" width="142" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="XlO-sD-jTr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ProximaNovaSoft-Regular" family="Proxima Nova Soft" pointSize="15"/>
+                        <state key="normal">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="tna-hi-1XJ">
+                        <rect key="frame" x="234" y="186.5" width="133" height="25"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sFq-r4-mAC">
+                                <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="Ob8-YJ-Fgr"/>
+                                    <constraint firstAttribute="height" constant="25" id="Pbb-Q4-Rmx"/>
+                                </constraints>
+                                <state key="normal" image="linedHeart-icon"/>
+                                <connections>
+                                    <action selector="likeTapped:" destination="kGD-vv-zVJ" eventType="touchUpInside" id="Oox-mi-5Dl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" placeholderIntrinsicWidth="25" placeholderIntrinsicHeight="25" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="tkl-rc-Kvt" userLabel="goalLikeCount">
+                                <rect key="frame" x="27" y="0.0" width="25" height="25"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2Y-cP-Ctk" userLabel="goalCommentButton">
+                                <rect key="frame" x="54" y="0.0" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="YMG-J2-DNb"/>
+                                    <constraint firstAttribute="width" constant="25" id="dfh-OO-qUu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="speech-icon"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="6GU-aj-2cq" userLabel="3">
+                                <rect key="frame" x="81" y="0.0" width="25" height="25"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="esT-pc-giT" userLabel="goalShareButton">
+                                <rect key="frame" x="108" y="0.0" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="HQi-Qd-xju"/>
+                                    <constraint firstAttribute="width" constant="25" id="Mhr-me-7iC"/>
+                                </constraints>
+                                <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="more-option-plane"/>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="DBK-UY-HNx"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="tna-hi-1XJ" secondAttribute="trailing" constant="8" id="Iqs-Gq-Hlg"/>
+                <constraint firstItem="tna-hi-1XJ" firstAttribute="centerY" secondItem="cS3-yb-FKn" secondAttribute="centerY" id="Nc8-Ad-cJv"/>
+                <constraint firstItem="O3P-ez-Xqc" firstAttribute="leading" secondItem="O2w-up-1Ar" secondAttribute="leading" id="QCF-bU-Kgs"/>
+                <constraint firstItem="cS3-yb-FKn" firstAttribute="leading" secondItem="O3P-ez-Xqc" secondAttribute="trailing" constant="9" id="RpS-Ga-qem"/>
+                <constraint firstItem="O3P-ez-Xqc" firstAttribute="top" secondItem="O2w-up-1Ar" secondAttribute="bottom" constant="40" id="Tpn-Ay-f8K"/>
+                <constraint firstItem="cS3-yb-FKn" firstAttribute="centerY" secondItem="O3P-ez-Xqc" secondAttribute="centerY" id="Uhj-Wy-LWh"/>
+                <constraint firstAttribute="bottom" secondItem="O3P-ez-Xqc" secondAttribute="bottom" constant="8" id="aVF-Pa-CM7"/>
+                <constraint firstAttribute="bottom" secondItem="sFb-pL-w8T" secondAttribute="bottom" constant="-76" id="aYG-EJ-TmS"/>
+                <constraint firstItem="O2w-up-1Ar" firstAttribute="leading" secondItem="kGD-vv-zVJ" secondAttribute="leading" constant="8" id="dMg-Vd-hLP"/>
+                <constraint firstAttribute="trailing" secondItem="O2w-up-1Ar" secondAttribute="trailing" constant="8" id="fnz-m1-U8O"/>
+                <constraint firstItem="sFb-pL-w8T" firstAttribute="leading" secondItem="kGD-vv-zVJ" secondAttribute="leading" id="rtH-WP-eVe"/>
+                <constraint firstItem="tna-hi-1XJ" firstAttribute="leading" secondItem="cS3-yb-FKn" secondAttribute="trailing" constant="25" id="tIO-8t-twr"/>
+                <constraint firstItem="sFb-pL-w8T" firstAttribute="top" secondItem="kGD-vv-zVJ" secondAttribute="top" id="xbF-Ch-HKh"/>
+                <constraint firstAttribute="trailing" secondItem="sFb-pL-w8T" secondAttribute="trailing" id="zTP-WD-kQw"/>
+            </constraints>
+            <size key="customSize" width="467" height="308"/>
+            <connections>
+                <outlet property="goalAuthor" destination="cS3-yb-FKn" id="gVU-cI-ggM"/>
+                <outlet property="goalAuthorImage" destination="O3P-ez-Xqc" id="8m1-Ut-EfB"/>
+                <outlet property="goalCommentButton" destination="w2Y-cP-Ctk" id="5Dm-OM-nyi"/>
+                <outlet property="goalCommentCount" destination="6GU-aj-2cq" id="iDy-JX-EkG"/>
+                <outlet property="goalImage" destination="sFb-pL-w8T" id="YtV-D4-fYF"/>
+                <outlet property="goalLikeButton" destination="sFq-r4-mAC" id="RzO-1M-7Bw"/>
+                <outlet property="goalLikeCount" destination="tkl-rc-Kvt" id="48y-IH-a9f"/>
+                <outlet property="goalShareButton" destination="esT-pc-giT" id="Ao4-zF-1SX"/>
+                <outlet property="goalTitle" destination="O2w-up-1Ar" id="wmq-nm-UWR"/>
+            </connections>
+            <point key="canvasLocation" x="92.5" y="-654"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="linedHeart-icon" width="24" height="24"/>
+        <image name="more-option-plane" width="32" height="32"/>
+        <image name="speech-icon" width="24" height="24"/>
+    </resources>
+</document>
